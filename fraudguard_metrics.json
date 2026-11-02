@@ -1,0 +1,93 @@
+{
+  "models": {
+    "Logistic Regression": {
+      "val_ap": 0.026216566132001927,
+      "ap": 0.1322125242270257,
+      "roc_auc": 0.9221902681106898,
+      "precision": 0.4001831501831502,
+      "recall": 0.1028235294117647,
+      "f1": 0.1636091351553725,
+      "caught": 437,
+      "missed": 3813,
+      "false_alerts": 655,
+      "queue_recall": 0.9087058823529411,
+      "queue_share": 0.24538173000538144,
+      "top_1_percent_count": 12488,
+      "top_1_percent_share": 0.010000512518258464,
+      "top_1_percent_recall": 0.2887058823529412,
+      "medium_validation_recall": 0.9
+    },
+    "Random Forest": {
+      "val_ap": 0.18069144628853737,
+      "ap": 0.3389529909402674,
+      "roc_auc": 0.9156513256453337,
+      "precision": 0.8955399061032864,
+      "recall": 0.17952941176470588,
+      "f1": 0.2990983927871423,
+      "caught": 763,
+      "missed": 3487,
+      "false_alerts": 89,
+      "queue_recall": 0.9049411764705882,
+      "queue_share": 0.27747978756118186,
+      "top_1_percent_count": 12488,
+      "top_1_percent_share": 0.010000512518258464,
+      "top_1_percent_recall": 0.5061176470588236,
+      "medium_validation_recall": 0.9
+    },
+    "Neural Network": {
+      "val_ap": 0.03262676998327807,
+      "ap": 0.20834031314362753,
+      "roc_auc": 0.9431305040559622,
+      "precision": 0.4005994005994006,
+      "recall": 0.18870588235294117,
+      "f1": 0.2565579014715291,
+      "caught": 802,
+      "missed": 3448,
+      "false_alerts": 1200,
+      "queue_recall": 0.8988235294117647,
+      "queue_share": 0.1681268098301002,
+      "top_1_percent_count": 12488,
+      "top_1_percent_share": 0.010000512518258464,
+      "top_1_percent_recall": 0.39694117647058824,
+      "medium_validation_recall": 0.9
+    },
+    "Autoencoder": {
+      "val_ap": 0.018272264437973057,
+      "ap": 0.06418408781787127,
+      "roc_auc": 0.8164205827097433,
+      "precision": 0.1787290379523389,
+      "recall": 0.09529411764705882,
+      "f1": 0.12430939226519337,
+      "caught": 405,
+      "missed": 3845,
+      "false_alerts": 1861,
+      "queue_recall": 0.904,
+      "queue_share": 0.6453037311329216,
+      "top_1_percent_count": 12488,
+      "top_1_percent_share": 0.010000512518258464,
+      "top_1_percent_recall": 0.25058823529411767,
+      "medium_validation_recall": 0.9
+    }
+  },
+  "selected_model": "Random Forest",
+  "high_lines": {
+    "Logistic Regression": 0.9756728410720825,
+    "Random Forest": 0.9970254205311229,
+    "Neural Network": 0.9676835536956787,
+    "Autoencoder": 0.9819707274436951
+  },
+  "medium_lines": {
+    "Logistic Regression": 0.4492752254009247,
+    "Random Forest": 0.003970580584295551,
+    "Neural Network": 0.4511277675628662,
+    "Autoencoder": 0.4055807590484619
+  },
+  "random_guessing_ap": 0.0034034415601055788,
+  "split": "paysim_rows_hour_boundaries_60_20_20_v2",
+  "hours": {
+    "train_last": 281,
+    "validation_last": 355
+  },
+  "dataset_sha256": "16910f90577b0d981bf8ff289714510bb89bc71bff7d3f220f024e287e4eea6b",
+  "note": "Historical, simulated benchmark. Scores set review priority; they do not prove fraud."
+}
