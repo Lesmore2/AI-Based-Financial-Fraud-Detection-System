@@ -18,19 +18,19 @@ Prototype notice
 This is a prototype built on simulated data. It uses synthetic PaySim mobile money records and a public SMS Spam Collection dataset , not live bank data. Scores are uncalibrated, patterns may change, and the project is not ready for operational use. Any real deployment would require human review, access controls, and validation on representative local data.
 
 Requirements
-•	Python 3.10 or newer
-•	pip 
-•	pyttsx3 for voice output 
+•	Python 3.12.10
+•	pip (upgrade to 26)
+•	pyttsx3 for voice output and Microsoft Visual C++ with x64 Redistributable
 
 Datasets and where to download
-PaySim (synthetic mobile-money transactions): Kaggle: ealaxi/paysim1
-SMS Spam Collection: UCI: doi.org/10.24432/C5CC84
+PaySim (https://www.kaggle.com/datasets/ealaxi/paysim1)
+SMS Spam Collection: (https://archive.ics.uci.edu/dataset/228/sms+spam+collection)
 
 FAQ file placement
 fraudguard_faq.csv must sit in the same directory as fraudguard_ai.py. Ask FraudGuard reads it at runtime for FAQ retrieval; if it is missing or in another folder, the assistant will not work.
 
 Run command
-python fraudguard_ai.py
+.venv\Scripts\python.exe fraudguard_ai.py
 
 The Project-board link:
 
