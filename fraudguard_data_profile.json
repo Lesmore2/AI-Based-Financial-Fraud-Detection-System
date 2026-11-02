@@ -1,0 +1,38 @@
+{
+  "file": "PS_20174392719_1491204439457_log.csv",
+  "sha256": "16910f90577b0d981bf8ff289714510bb89bc71bff7d3f220f024e287e4eea6b",
+  "rows_retained": 6362620,
+  "columns_read": [
+    "step",
+    "type",
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "isFraud",
+    "isFlaggedFraud"
+  ],
+  "duplicate_rows_removed": 0,
+  "matching_non_identifier_rows": 543,
+  "missing_values": 0,
+  "genuine": 6354407,
+  "fraud": 8213,
+  "fraud_share_percent": 0.1291,
+  "first_hour": 1,
+  "last_hour": 743,
+  "fraud_by_type": {
+    "CASH_IN": 0,
+    "CASH_OUT": 4116,
+    "DEBIT": 0,
+    "PAYMENT": 0,
+    "TRANSFER": 4097
+  },
+  "transactions_by_type": {
+    "CASH_IN": 1399284,
+    "CASH_OUT": 2237500,
+    "DEBIT": 41432,
+    "PAYMENT": 2151495,
+    "TRANSFER": 532909
+  }
+}
